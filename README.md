@@ -2,7 +2,7 @@
 
 **Algorithm Practice for June 24, 2020** by *@rangen*
 
-**Clone down this repo and write your function in solution.js**
+**Clone down or fork this repo and write your function in solution.js**
 
 1. The function checkIsAnagram accepts two arguments, word and baseline.
 1. Assume both are valid strings.
