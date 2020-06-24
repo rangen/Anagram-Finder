@@ -2,6 +2,7 @@ const source = document.getElementById('source');
 const container = document.getElementById('anagram-container');
 
 source.addEventListener('input', () => {
+    let start = Date.now()
     let anagrams = findAnagrams(source.value);
     container.innerHTML = "";
     if (!anagrams.length) {
@@ -13,6 +14,7 @@ source.addEventListener('input', () => {
         solution.innerText = ana;
         container.appendChild(solution)
     })
+    document.getElementById('whenInDoubtPoundItOut').innerText = `${Date.now() - start}ms for search`
 })
 
 
